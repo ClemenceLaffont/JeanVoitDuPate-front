@@ -2,13 +2,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ShopComponent } from './shop/shop.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './header/register/register.component';
+import { ConnexionComponent } from './header/connexion/connexion.component';
+import { BracketComponent } from './header/bracket/bracket.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { appRoutes } from "./app.routes";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    ShopComponent,
+    HomeComponent,
+    RegisterComponent,
+    ConnexionComponent,
+    BracketComponent,
+    ProfileComponent,
+    NotfoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

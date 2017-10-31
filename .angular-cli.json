@@ -9,7 +9,10 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "assets/img/*.jpg",
+        "assets/img/*.jpg",
+        "assets/var-scss/*.scss"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,9 +22,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "style/global.scss"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -51,7 +55,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

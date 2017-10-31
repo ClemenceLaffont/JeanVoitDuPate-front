@@ -13,6 +13,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { appRoutes } from "./app.routes";
 import { RouterModule } from "@angular/router";
+import { AdminComponent } from './admin/admin.component';
+import { AuthGuard } from "./admin/auth.guard";
 
 @NgModule({
   declarations: [
@@ -25,13 +27,17 @@ import { RouterModule } from "@angular/router";
     ConnexionComponent,
     BracketComponent,
     ProfileComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    AdminComponent
+    
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

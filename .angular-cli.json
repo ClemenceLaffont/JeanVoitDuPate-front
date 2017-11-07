@@ -11,8 +11,9 @@
         "assets",
         "favicon.ico",
         "assets/img/*.jpg",
-        "assets/img/*.jpg",
-        "assets/var-scss/*.scss"
+        "assets/img/*.png",
+        "assets/font/*",
+        "assets/style/*.scss"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -22,7 +23,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "style/global.scss"
+        "assets/style/global.scss"
       ],
       "scripts": [
       ],

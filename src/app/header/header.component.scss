@@ -1,1 +1,34 @@
-@import '../../style/global';
+@import '../../assets/style/global';
+@import '../../assets/style/font-awesome';
+
+.end-item {
+    justify-content: space-between;
+}
+
+img {
+    width: 60%;
+    max-width: 300px;
+}
+
+nav {
+    padding-top: 5px;
+    background: linear-gradient(180deg, transparent, transparent 20%, $purple 20%, $purple 80%, transparent 80%, transparent 100%);
+    color: $black;
+    a {
+        color: $black;
+    }
+}
+
+.dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+@media screen and (max-width: 770px) { 
+    nav {
+        background: $purple;
+    }
+    img {
+        width: 30%;
+    }
+}

@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShopComponent } from './shop/shop.component';
 import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './header/register/register.component';
+import { RegisterComponent } from './register/register.component';
 import { ConnexionComponent } from './header/connexion/connexion.component';
 import { BracketComponent } from './header/bracket/bracket.component';
 import { ProfileComponent } from './profile/profile.component';

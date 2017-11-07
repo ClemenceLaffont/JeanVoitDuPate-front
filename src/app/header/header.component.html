@@ -1,6 +1,40 @@
-<p>
-  header works!
-</p>
-<app-bracket></app-bracket>
-<app-connexion></app-connexion>
-<app-register></app-register>
+<header class="container-fluid">
+  <nav class="navbar navbar-expand-md justify-content-between">
+    <a class="navbar-brand" href="#"><img src="/assets/img/logo.png" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse end-item" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liste des produits</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Paté de campagne</a>
+            <a class="dropdown-item" href="#">Miel des paturages</a>
+            <a class="dropdown-item" href="#">Produits de la mer</a>
+          </div>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>&nbsp; Panier</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Profil</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <div class="dropdown-item">
+              <app-connexion></app-connexion>
+            </div>
+            <a class="dropdown-item" href="#">Inscription</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <app-bracket></app-bracket>
